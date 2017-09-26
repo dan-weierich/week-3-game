@@ -1,75 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Hangman Game</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    </head>
-    <body>
-    
-        <div id="hangman">
-
-        <h1><img src="assets/images/won.jpeg">Hangman Game<img src="assets/images/lost.jpeg"></h1>
-        
-        <p>Guess JFK's middle name. It's 10 letters</p>
-        </div>
-        	<div class="container">
-        		<div class="first">
-			        <div class="letter" data-name="A"><h3>A</h3></div>
-			        <div class="letter" data-name="B"><h3>B</h3></div>
-			        <div class="letter" data-name="C"><h3>C</h3></div>
-			        <div class="letter" data-name="D"><h3>D</h3></div>
-			        <div class="letter" data-name="E"><h3>E</h3></div>
-			        <div class="letter" data-name="F"><h3>F</h3></div>
-			        <div class="letter" data-name="G"><h3>G</h3></div>
-			        <div class="letter" data-name="H"><h3>H</h3></div>
-			        <div class="letter" data-name="I"><h3>I</h3></div>
-			        <div class="letter" data-name="J"><h3>J</h3></div>
-			        <div class="letter" data-name="K"><h3>K</h3></div>
-			        <div class="letter" data-name="L"><h3>L</h3></div>
-			        <div class="letter" data-name="M"><h3>M</h3></div>
-        		</div>
-        
-        <br></br>
-        
-        		<div class="second">
-		        	<div class="letter" data-name="N"><h3>N</h3></div>
-		        	<div class="letter" data-name="O"><h3>O</h3></div>
-			        <div class="letter" data-name="P"><h3>P</h3></div>
-			        <div class="letter" data-name="Q"><h3>Q</h3></div>
-			        <div class="letter" data-name="R"><h3>R</h3></div>
-			        <div class="letter" data-name="S"><h3>S</h3></div>
-			        <div class="letter" data-name="T"><h3>T</h3></div>
-			        <div class="letter" data-name="U"><h3>U</h3></div>
-			        <div class="letter" data-name="V"><h3>V</h3></div>
-			        <div class="letter" data-name="W"><h3>W</h3></div>
-			        <div class="letter" data-name="X"><h3>X</h3></div>
-			        <div class="letter" data-name="Y"><h3>Y</h3></div>
-			        <div class="letter" data-name="Z"><h3>Z</h3></div>
-        		</div>
-        	</div>
-        </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script type="text/javascript">
-
-                    var letters="";
-                    var winner= "FITZGERALD";
-                    $(".letter").click(function(){
-                    letters+=$(this).attr('data-name');
-                    $("#guess").text(letters);
-                    if(letters.length==10){
-                        if(letters==winner)
-                        {
-                            alert("You won");
-                        }
-                        else
-                        {
-                            alert("You lost");
-                        }
-                    }
-                    })
-        </script>
-        <div id="guess"></div>
-    </body>
+  <head>
+    <meta charset="UTF-8">
+    <title>BrightScope Snake Game</title>
+    <h3 style="float: left;">
+      <p><b>Herman Hertz Θ Theta Data Snake &nbsp; &nbsp; </b></p>
+      <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAspAAAAJDZiZWY5NWUwLTgzNzYtNGVhOS1hYWI1LTczY2NiZGUwZjY5Yw.jpg">
+    </h3>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="snake.js" type="text/javascript"></script>
+  </head>
+  <p>
+    **note: need to debug reverse directional code. i.e. if moving left and press right, snake dissolves if >= 3 units</p>
+  </p>
+  <body>
+  </body>
 </html>
